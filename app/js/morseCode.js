@@ -9,6 +9,6 @@ const morseCodeDict = {
     '----.': '9'
 };
 
-function translateMorseCode(morseCode) {
-    return morseCode.split(' / ').map(word => word.split(' ').map(letter => morseCodeDict[letter]).join('')).join(' ');
+function translateMorseCode(morseCodeLetter) {
+    return morseCodeDict[morseCodeLetter] || 'Invalid Morse Code';
 }
