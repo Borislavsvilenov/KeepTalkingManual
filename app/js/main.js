@@ -1,5 +1,7 @@
 const output = document.getElementById("output");
 
+let morseMSG;
+
 document.getElementById('prompt').addEventListener('input', function() {
     let inputValue = this.value;
 
@@ -10,10 +12,11 @@ document.getElementById('prompt').addEventListener('input', function() {
     if(w1 == "wires") {
 
     } else if(w1 == "morse") {
-        let morseMSG = "";
+        morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {
             morseMSG = morseMSG + " " + translateMorseCode(brokenDown[i]);
         }
+        morseMSG = morseMSG.slice(1);
         output.textContent = getFrequency(morseMSG);
     } else {
         output.textContent = "No such task in Data Base";
