@@ -14,7 +14,7 @@ document.getElementById('prompt').addEventListener('input', function() {
         for (let i = 1; i < brokenDown.length; i++) {
             morseMSG = morseMSG + " " + translateMorseCode(brokenDown[i]);
         }
-        output.textContent = morseMSG;
+        output.textContent = getFrequency(morseMSG);
     } else {
         output.textContent = "No such task in Data Base";
     }

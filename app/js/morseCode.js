@@ -12,3 +12,21 @@ const morseCodeDict = {
 function translateMorseCode(morseCodeLetter) {
     return morseCodeDict[morseCodeLetter] || 'Invalid Morse Code';
 }
+
+function getFrequency(msg) {
+    let posibleWords = ['shell','halls','slick','trick','boxes','leaks','strobe','bistro','flick','bombs','break','brick','steak','sting','vector','beats']
+    let posibleLetters = posibleWords.map(word => word.split(''));
+
+    let letters = msg.split('')
+
+    for (let i = 0; i < posibleLetters.length; i++) {
+        for (let j = 0; j < letters.length; j++) {
+            if(!posibleLetters[i].includes(letters[j])) {
+                posibleLetters.splice(i, 1);
+                posibleWords.splice(i, 1);
+            }
+        }
+    }
+
+    return posibleWords;
+}
