@@ -30,7 +30,12 @@ document.getElementById('prompt').addEventListener('input', function() {
     
     } else if(w1 == "button") {
 
-        
+
+    } else if(w1 == "pass") {
+        brokenDown.splice(0, 1);
+        let letters = getLetters(brokenDown.join(' '));
+
+        output.textContent = getPass(letters).join(' ');
     } else {
         output.textContent = "No such task in Data Base";
     }
