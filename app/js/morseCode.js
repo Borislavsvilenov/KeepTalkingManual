@@ -20,6 +20,10 @@ function translateMorseCode(morseCodeLetter) {
     return morseCodeDict[morseCodeLetter];
 }
 
+function mapWordsToFrequency(word) {
+    return frequencys[word];
+}
+
 function getFrequency(msg) {
     let posibleWords = ['shell','halls','slick','trick','boxes','leaks','strobe','bistro','flick','bombs','break','brick','steak','sting','vector','beats'];
 
@@ -33,7 +37,10 @@ function getFrequency(msg) {
             return letters.every(letter => wordLetters.includes(letter));
         });
     }
+    let posibleFrequency = '';
+    for (let b = 0; b < posibleWords.length; b++) {
+        posibleFrequency = posibleFrequency + ' ' + mapWordsToFrequency(posibleWords);
+    }
 
-
-    return posibleWords;
+    return posibleFrequency;
 }
