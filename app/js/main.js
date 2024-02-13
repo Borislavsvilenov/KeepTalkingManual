@@ -11,6 +11,8 @@ document.getElementById('prompt').addEventListener('input', function() {
 
     if(w1 == "wires") {
         let sNum, wires = wireInput(brokenDown);
+
+        output.textContent = Wires(wires, sNum);
     } else if(w1 == "morse") {
         morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {
