@@ -29,13 +29,14 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = SimonSays(back[0], back[1]);
     
     } else if(w1 == "button") {
-
+        
 
     } else if(w1 == "pass") {
         brokenDown.splice(0, 1);
         let letters = getLetters(brokenDown.join(' '));
 
         output.textContent = getPass(letters).join(' ');
+
     } else {
         output.textContent = "No such task in Data Base";
     }

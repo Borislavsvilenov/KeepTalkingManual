@@ -1,6 +1,6 @@
-function TheButton(indicator, batteries, colour, word)
+function TheButton(label, colour, batteries, indicator)
 {
-    if(colour == "blue" && word == "abort")
+    if(colour == "blue" && label == "abort")
     {
         return "Hold Button"
     }
