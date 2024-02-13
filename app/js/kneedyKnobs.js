@@ -1,9 +1,11 @@
 const knobsPossibles = {
-    "no yes no yes": "up", "yes no no yes": "up", "no yes yes yes": "down", "yes no no yes": "down",
-    "no yes no no": "left", "no no no no": "left", "yes yes no yes": "right"
+    'n l n l l l': "up", 'l n n l ll': "up",
+    'n l l l l l': "down", "l n n l l n": "down",
+    'n l n n n n': "left", "n n n n n n": "left",
+    'l l n l l l': "right"
 };
 
-function knob(list)
+function knob(ligths)
 {
-    
+    return knobsPossibles[ligths];
 }
