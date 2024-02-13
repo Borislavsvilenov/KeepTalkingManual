@@ -15,43 +15,46 @@ function simonInput(msg) {
 
 
 function SimonSays(serial, colour)
-{
+{   
+    let output = []
+
     if(serial)
     {
         if(colour == "r")
         {
-            return "blue"
+            output.push("blue")
         }
         else if(colour == "b")
         {
-            return "red"
+            output.push("red")
         }
         else if(colour == "g")
         {
-            return "yellow"
+            output.push("yellow")
         }
         else if(colour == "y")
         {
-            return "green"
+            output.push("green")
         }
     }
     else if(!serial)
     {
         if(colour == "r")
         {
-            return "blue"
+            output.push("blue")
         }
         else if(colour == "b")
         {
-            return "yellow"
+            output.push("red")
         }
         else if(colour == "g")
         {
-            return "green"
+            output.push("yellow")
         }
         else if(colour == "y")
         {
-            return "red"
+            output.push("green")
         }
     }
+    return output;
 }
