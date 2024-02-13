@@ -3,15 +3,12 @@ function wireInput(msg) {
     let serialNumber = msg[0];
     msg.splice(0, 1);
     let colours = msg;
-    console.log(msg);
 
     if (serialNumber == "e") {
         serialNumber = true;
     } else if (serialNumber == "o") {
         serialNumber = false;
     }
-
-    console.log(serialNumber)
 
     return [serialNumber, colours];
 }
