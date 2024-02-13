@@ -14,46 +14,48 @@ function simonInput(msg) {
 }
 
 
-function SimonSays(serial, colour)
-{
-let output = []
+function SimonSays(serial, colours)
+{   
+    let output = [];
 
-    if(serial)
-    {
-        if(colour == "r")
+    for(let o = 0; o < colours.length; o++) {
+        if(serial)
         {
-            output.push("blue")
+            if(colours[o] == "r")
+            {
+                output.push("blue")
+            }
+            else if(colours[o] == "b")
+            {
+                output.push("red")
+            }
+            else if(colours[o] == "g")
+            {
+                output.push("yellow")
+            }
+            else if(colours[o] == "y")
+            {
+                output.push("green")
+            }
         }
-        else if(colour == "b")
+        else if(!serial)
         {
-            output.push("red")
-        }
-        else if(colour == "g")
-        {
-            output.push("yellow")
-        }
-        else if(colour == "y")
-        {
-            output.push("green")
-        }
-    }
-    else if(!serial)
-    {
-        if(colour == "r")
-        {
-            output.push("blue")
-        }
-        else if(colour == "b")
-        {
-            output.push("yellow")
-        }
-        else if(colour == "g")
-        {
-            output.push("green")
-        }
-        else if(colour == "y")
-        {
-            output.push("yellow")
+            if(colour[o] == "r")
+            {
+                output.push("blue")
+            }
+            else if(colours[o] == "b")
+            {
+                output.push("red")
+            }
+            else if(colours[o] == "g")
+            {
+                output.push("yellow")
+            }
+            else if(colours[o] == "y")
+            {
+                output.push("green")
+            }
         }
     }
 return output;
