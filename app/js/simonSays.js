@@ -10,7 +10,7 @@ function simonInput(msg) {
         serialNumber = false;
     }
 
-    return serialNumber, colours;
+    return [serialNumber, colours];
 }
 
 

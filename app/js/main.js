@@ -22,9 +22,9 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = knob(brokenDown.splice(1).join(' '));
 
     } else if(w1 == "simon") {
-        let sNum, colors = simonInput(brokenDown);
+        let back = simonInput(brokenDown);
 
-        output.textContent = SimonSays(sNum, colors);
+        output.textContent = SimonSays(back[0], back[1]);
     } else {
         output.textContent = "No such task in Data Base";
     }
