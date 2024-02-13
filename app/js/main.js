@@ -18,6 +18,8 @@ document.getElementById('prompt').addEventListener('input', function() {
         }
         morseMSG = morseMSG.slice(1);
         output.textContent = getFrequency(morseMSG);
+    } else if(w1 == "knob") {
+        output.textContent = knob(brokenDown.splice(1).join(' '));
     } else {
         output.textContent = "No such task in Data Base";
     }
