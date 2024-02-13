@@ -4,5 +4,7 @@ function TheButton(indicator, batteries, colour, word)
     {
         return "Hold Button"
     }
-    else if(batteries > 1 && )
+    else if(batteries > 1 ) {
+        
+    }
 }
