@@ -46,15 +46,15 @@ function SimonSays(serial, colours)
             }
             else if(colours[o] == "b")
             {
-                output.push("red")
+                output.push("yellow")
             }
             else if(colours[o] == "g")
             {
-                output.push("yellow")
+                output.push("green")
             }
             else if(colours[o] == "y")
             {
-                output.push("green")
+                output.push("red")
             }
         }
     }
