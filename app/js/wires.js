@@ -51,6 +51,51 @@ function Wires(colours, serialNumber){
         {
             return "cut first wire"
         }
-    
+        else if (YeWires > 1)
+        {
+            return "cut last wire"
+        }
+        else
+        {
+            return "cut second wire"
+        }
+    }
+    else if(colours.length == 5)
+    {
+        if(!serialNumber && colours[4] == "black")
+        {
+            return "cut fourth wire"
+        }
+        else if(ReWires == 1 && YeWires > 1)
+        {
+            return "cut first wire"
+        }
+        else if(BaWires == 0)
+        {
+            return "cut second wire"
+        }
+        else
+        {
+            return "cut first wire"
+        }
+    }
+    else if(colours.length == 6)
+    {
+        if(!serialNumber && YeWires == 0)
+        {
+            return "cut third wire"
+        }
+        else if(YeWires == 1 && WhWires > 1)
+        {
+            return "cut fourth wire"
+        }
+        else if(ReWires == 0)
+        {
+            return "cut last wire"
+        }
+        else
+        {
+            return "cut fourth wire"
+        }
     }
 }
