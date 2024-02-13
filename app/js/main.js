@@ -29,7 +29,7 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = SimonSays(back[0], back[1]);
     
     } else if(w1 == "button") {
-        
+
 
     } else if(w1 == "pass") {
         brokenDown.splice(0, 1);
@@ -37,6 +37,9 @@ document.getElementById('prompt').addEventListener('input', function() {
 
         output.textContent = getPass(letters).join(' ');
 
+    } else if(w1 == "sym") {
+
+        
     } else {
         output.textContent = "No such task in Data Base";
     }
