@@ -20,6 +20,10 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = getFrequency(morseMSG);
     } else if(w1 == "knob") {
         output.textContent = knob(brokenDown.splice(1).join(' '));
+
+    } else if(w1 == "simon") {
+
+        
     } else {
         output.textContent = "No such task in Data Base";
     }
