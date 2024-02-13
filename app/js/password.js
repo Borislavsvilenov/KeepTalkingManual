@@ -1,3 +1,3 @@
-function findPassword() {
-    
+function findPassword(password) {
+
 }
