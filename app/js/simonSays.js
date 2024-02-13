@@ -15,8 +15,8 @@ function simonInput(msg) {
 
 
 function SimonSays(serial, colour)
-{   
-    let output = []
+{
+let output = []
 
     if(serial)
     {
@@ -45,16 +45,16 @@ function SimonSays(serial, colour)
         }
         else if(colour == "b")
         {
-            output.push("red")
+            output.push("yellow")
         }
         else if(colour == "g")
         {
-            output.push("yellow")
+            output.push("green")
         }
         else if(colour == "y")
         {
-            output.push("green")
+            output.push("yellow")
         }
     }
-    return output;
+return output;
 }
