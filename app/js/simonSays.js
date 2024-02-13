@@ -40,7 +40,7 @@ function SimonSays(serial, colours)
         }
         else if(!serial)
         {
-            if(colour[o] == "r")
+            if(colours[o] == "r")
             {
                 output.push("blue")
             }
