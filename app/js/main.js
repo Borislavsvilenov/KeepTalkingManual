@@ -10,7 +10,7 @@ document.getElementById('prompt').addEventListener('input', function() {
     let w1 = brokenDown[0];
 
     if(w1 == "wires") {
-                
+        let sNum, wires = wireInput(brokenDown);
     } else if(w1 == "morse") {
         morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {

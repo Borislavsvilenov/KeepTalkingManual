@@ -1,3 +1,12 @@
+function wireInput(msg) {
+    msg.splice(0, 1);
+    let serialNumber = msg[0];
+    msg.splice(0, 1);
+    let colours = msg;
+
+    return serialNumber, colours;
+}
+
 function Wires(colours, serialNumber){
     let BaWires = 0;
     let BuWires = 0;
