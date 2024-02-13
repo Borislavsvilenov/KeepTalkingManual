@@ -12,6 +12,10 @@ function Wires(colours){
             BuWires++
         } else if(colours[z] == "red"){
             ReWires++
-        } else if(colours[z] == "yellow")
+        } else if(colours[z] == "yellow"){
+            YeWires++
+        } else if(colours[z] ==  "white"){
+            WhWires++
+        }
     }
 }
