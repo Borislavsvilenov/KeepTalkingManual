@@ -11,6 +11,7 @@ document.getElementById('prompt').addEventListener('input', function() {
         let back = wireInput(brokenDown);
 
         output.textContent = Wires(back[0], back[1]);
+
     } else if(w1 == "morse") {
         let morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {
@@ -18,6 +19,7 @@ document.getElementById('prompt').addEventListener('input', function() {
         }
         morseMSG = morseMSG.slice(1);
         output.textContent = getFrequency(morseMSG);
+
     } else if(w1 == "knob") {
         output.textContent = knob(brokenDown.splice(1).join(' '));
 
@@ -25,6 +27,10 @@ document.getElementById('prompt').addEventListener('input', function() {
         let back = simonInput(brokenDown);
 
         output.textContent = SimonSays(back[0], back[1]);
+    
+    } else if(w1 == "button") {
+
+        
     } else {
         output.textContent = "No such task in Data Base";
     }
