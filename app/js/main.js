@@ -1,7 +1,5 @@
 const output = document.getElementById("output");
 
-let morseMSG;
-
 document.getElementById('prompt').addEventListener('input', function() {
     let inputValue = this.value;
 
@@ -14,7 +12,7 @@ document.getElementById('prompt').addEventListener('input', function() {
 
         output.textContent = Wires(wires, sNum);
     } else if(w1 == "morse") {
-        morseMSG = "";
+        let morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {
             morseMSG = morseMSG + " " + translateMorseCode(brokenDown[i]);
         }
