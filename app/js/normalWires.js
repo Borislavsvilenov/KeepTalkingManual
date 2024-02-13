@@ -1,4 +1,0 @@
-function CheckWires(input)
-{
-    if()
-}
