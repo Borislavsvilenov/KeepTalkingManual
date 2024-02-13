@@ -43,5 +43,9 @@ function Wires(colours, serialNumber){
         {
             return "cut last red wire"
         }
+        else if(ReWires == 0 && colours[3] == "yellow")
+        {
+            return "cut first wire"
+        }
     }
 }
