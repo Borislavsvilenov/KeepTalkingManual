@@ -47,5 +47,10 @@ function Wires(colours, serialNumber){
         {
             return "cut first wire"
         }
+        else if(BuWires == 1)
+        {
+            return "cut first wire"
+        }
+    
     }
 }
