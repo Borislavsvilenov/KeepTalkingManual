@@ -1,3 +1,19 @@
+function simonInput(msg) {
+    msg.splice(0, 1);
+    let serialNumber = msg[0];
+    msg.splice(0, 1);
+    let colours = msg;
+
+    if (serialNumber == "v") {
+        serialNumber = true;
+    } else if (serialNumber == "n") {
+        serialNumber = false;
+    }
+
+    return serialNumber, colours;
+}
+
+
 function SimonSays(serial, colour)
 {
     if(serial)
