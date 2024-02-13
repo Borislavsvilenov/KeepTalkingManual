@@ -1,4 +1,4 @@
-function Wires(colours){
+function Wires(colours, serialNumber){
     let BaWires = 0;
     let BuWires = 0;
     let ReWires = 0;
@@ -16,6 +16,32 @@ function Wires(colours){
             YeWires++
         } else if(colours[z] ==  "white"){
             WhWires++
+        }
+    }
+
+    if(colours.length == 3){
+        if(ReWires == 0)
+        {
+            return "cut second wire"
+        } 
+        else if(colours[2] == "white") 
+        {
+            return "cut last wire"
+        }
+        else if(BuWires > 1)
+        {
+            return "cut last blue wire"
+        }
+        else
+        {
+            return "cut last wire"
+        }
+    }
+    else if(colours.length == 4)
+    {
+        if(!serialNumber && ReWires > 1)
+        {
+            return "cut last red wire"
         }
     }
 }
