@@ -3,6 +3,7 @@ function wireInput(msg) {
     let serialNumber = msg[0];
     msg.splice(0, 1);
     let colours = msg;
+    console.log(msg);
 
     if (serialNumber == "e") {
         serialNumber = true;
@@ -10,10 +11,12 @@ function wireInput(msg) {
         serialNumber = false;
     }
 
-    return serialNumber, colours;
+    console.log(serialNumber)
+
+    return [serialNumber, colours];
 }
 
-function Wires(colours, serialNumber){
+function Wires(serialNumber, colours){
     let BaWires = 0;
     let BuWires = 0;
     let ReWires = 0;

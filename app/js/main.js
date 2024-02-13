@@ -8,9 +8,9 @@ document.getElementById('prompt').addEventListener('input', function() {
     let w1 = brokenDown[0];
 
     if(w1 == "wires") {
-        let sNum, wires = wireInput(brokenDown);
+        let back = wireInput(brokenDown);
 
-        output.textContent = Wires(wires, sNum);
+        output.textContent = Wires(back[0], back[1]);
     } else if(w1 == "morse") {
         let morseMSG = "";
         for (let i = 1; i < brokenDown.length; i++) {
