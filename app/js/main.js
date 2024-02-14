@@ -42,6 +42,11 @@ document.getElementById('prompt').addEventListener('input', function() {
     } else if(w1 == "sym") {
 
         
+    } else if(w1 == "CWires") {
+        let back = CWiresInput(brokenDown);
+
+        output.textContent = CWires(back[0], back[1], back[2]);
+
     } else {
         output.textContent = "No such task in Data Base";
     }
