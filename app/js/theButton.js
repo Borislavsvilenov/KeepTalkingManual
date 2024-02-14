@@ -24,7 +24,7 @@ function TheButton(label, colour, batteries, indicator)
     {
         return "Hold Button"
     }
-    else if(batteries > 1 &&label == "detonate") {
+    else if(batteries > 1 && label == "detonate") {
         return "Immediately press and release"
     }
     else if(colour == white && indicator == "CAR")
