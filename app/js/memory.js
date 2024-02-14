@@ -1,3 +1,16 @@
+function memoryInput(msg) {
+    msg.splice(0, 1);
+
+    let n1 = msg[0];
+    let n2 = msg[1];
+    let n3 = msg[2];
+    let n4 = msg[3];
+    let n5 = msg[4];
+
+    return [n1, n2, n3, n4, n5];
+}
+
+
 function Memory(number1, number2, number3, number4, number5)
 {
     if(number5 == 1)

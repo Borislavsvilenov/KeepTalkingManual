@@ -47,6 +47,11 @@ document.getElementById('prompt').addEventListener('input', function() {
 
         output.textContent = CWires(back[0], back[1], back[2]);
 
+    } else if(w1 == "memory") {
+        let back = memoryInput(brokenDown);
+
+        output.textContent = Memory(back[0], back[1], back[2], back[3], back[4]);
+
     } else {
         output.textContent = "No such task in Data Base";
     }
