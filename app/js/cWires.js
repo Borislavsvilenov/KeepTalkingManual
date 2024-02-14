@@ -1,5 +1,14 @@
 function CWiresInput(msg) {
+    msg.splice(0, 1);
+    let colour;
+    let star;
+    let light;
 
+    colour = msg[0];
+    star = msg[1];
+    light = msg[2];
+
+    return [colour, star, light];
 }
 
 
