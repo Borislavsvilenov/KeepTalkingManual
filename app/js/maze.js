@@ -1,0 +1,4 @@
+function Maze(x, y)
+{
+    
+}
