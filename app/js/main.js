@@ -29,8 +29,12 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = SimonSays(back[0], back[1]);
     
     } else if(w1 == "button") {
+        let back = buttonInput(brokenDown);
 
-
+        if(back[0] !== 'no') {
+            output.textContent = TheButton(back);
+        }
+        
     } else if(w1 == "pass") {
         brokenDown.splice(0, 1);
         let letters = getLetters(brokenDown.join(' '));
