@@ -1,4 +1,4 @@
-function TheButton(label, colour, batteries, indicator, litColour)
+function TheButton(label, colour, batteries, indicator)
 {
     if(colour == "blue" && label == "abort")
     {
@@ -25,23 +25,6 @@ function TheButton(label, colour, batteries, indicator, litColour)
     }
     else
     {
-        return "Hold Button"
-    }
-
-    if(litColour == "blue")
-    {
-        return "Release when 4 in any position"
-    }
-    else if(litColour == "white")
-    {
-        return "Release when 1 in any position"
-    }
-    else if(litColour == "yellow")
-    {
-        return "Release when 5 in any position"
-    }
-    else
-    {
-        return "Release when 1 in any position"
+        return "Hold Button, if blue 4, if yellow 5, else 1"
     }
 }
