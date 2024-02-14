@@ -49,4 +49,40 @@ function Memory(number1, number2, number3, number4, number5)
     {
         return "Press " + number1
     }
+    else if(number3 == 3)
+    {
+        return "Press the button in the third position"
+    }
+    else if(number3 == 4)
+    {
+        return "Press the number labeled 4"
+    }
+    else if(number2 == 1)
+    {
+        return "Press the number labeled 4"
+    }
+    else if(number2 == 2)
+    {
+        return "Press the number in the same position in stage 1"
+    }
+    else if(number2 == 3)
+    {
+        return "Press the number in the third position"
+    }
+    else if(number2 == 4)
+    {
+        return "Press the number in the same position in stage 1"
+    }
+    else if(number1 == 1 || number1 == 2)
+    {
+        return "Press the button in the second position"
+    }
+    else if(number1 == 3)
+    {
+        return "Press the button in the third position"
+    }
+    else if(number1 == 4)
+    {
+        return "Press the button in the fourth position"
+    }
 }
