@@ -1,3 +1,23 @@
+function buttonInput(msg) {
+    msg.splice(0, 1);
+    let label;
+    let colour;
+    let batteries;
+    let indicator;
+
+    if(msg.length > 4) {
+        label = msg[0];
+        colour = msg[1];
+        batteries = msg[2];
+        indicator = msg[3];
+
+        return [label, colour, batteries, indicator];
+    } else {
+        return ['no'];
+    }
+}
+
+
 function TheButton(label, colour, batteries, indicator)
 {
     if(colour == "blue" && label == "abort")
