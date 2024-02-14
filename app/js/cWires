@@ -1,0 +1,19 @@
+function CWires(colour, star, led)
+{
+    if(colour == "b")
+    {
+        if()
+    }
+    else if(colour == "r")
+    {
+        
+    }
+    else if(colour == "rb")
+    {
+
+    }
+    else if(colour == "w")
+    {
+
+    }
+}

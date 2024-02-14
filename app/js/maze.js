@@ -1,4 +1,0 @@
-function Maze(x, y)
-{
-    
-}
