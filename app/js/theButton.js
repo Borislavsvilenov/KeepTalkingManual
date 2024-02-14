@@ -5,31 +5,27 @@ function buttonInput(msg) {
     let batteries;
     let indicator;
 
-    if(msg.length > 4) {
-        label = msg[0];
-        colour = msg[1];
-        batteries = msg[2];
-        indicator = msg[3];
+    label = msg[0];
+    colour = msg[1];
+    batteries = msg[2];
+    indicator = msg[3];
 
-        return [label, colour, batteries, indicator];
-    } else {
-        return ['no'];
-    }
+    return [label, colour, batteries, indicator];
 }
 
 
-function TheButton(label, colour, batteries, indicator)
+function TheButton(label, colour , batteries, indicator)
 {
     if(colour == "blue" && label == "abort")
     {
-        return "Hold Button"
+        return "Hold Button, if blue 4, if yellow 5, else 1"
     }
     else if(batteries > 1 && label == "detonate") {
         return "Immediately press and release"
     }
-    else if(colour == white && indicator == "CAR")
+    else if(colour == 'white' && indicator == "CAR")
     {
-        return "Hold Button"
+        return "Hold Button, if blue 4, if yellow 5, else 1"
     }
     else if(batteries > 2 && indicator == "FRK")
     {
@@ -37,7 +33,7 @@ function TheButton(label, colour, batteries, indicator)
     }
     else if(colour == "yellow")
     {
-        return "Hold Button"
+        return "Hold Button, if blue 4, if yellow 5, else 1"
     }
     else if(colour == "red" && label == "hold")
     {

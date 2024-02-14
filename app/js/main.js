@@ -31,7 +31,7 @@ document.getElementById('prompt').addEventListener('input', function() {
     } else if(w1 == "button") {
         let back = buttonInput(brokenDown);
 
-        output.textContent = TheButton(back);
+        output.textContent = TheButton(back[0], back[1], back[2], back[3]);
 
     } else if(w1 == "pass") {
         brokenDown.splice(0, 1);
