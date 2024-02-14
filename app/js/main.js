@@ -40,7 +40,9 @@ document.getElementById('prompt').addEventListener('input', function() {
         output.textContent = getPass(letters).join(' ');
 
     } else if(w1 == "sym") {
+        let back = symInputs(brokenDown);
 
+        output.textContent = decodeSymbols(back[0], back[1], back[2], back[3])
         
     } else if(w1 == "CWires") {
         let back = CWiresInput(brokenDown);
