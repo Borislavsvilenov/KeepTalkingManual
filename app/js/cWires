@@ -54,26 +54,26 @@ function CWires(colour, star, led)
         }
         else
         {
-            return ""
+            return "Cut if last digit is even"
         }
     }
     else if(colour == "w")
     {
         if(led && star)
         {
-
+            return "Cut if 2 or more batteries"
         }
         else if(led)
         {
-
+            return "Do not cut"
         }
         else if(star)
         {
-
+            return "Cut the wire"
         }
         else
         {
-            
+            return "Cut the wire"
         }
     }
 }
