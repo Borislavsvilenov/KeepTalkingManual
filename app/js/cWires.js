@@ -1,3 +1,8 @@
+function CWiresInput(msg) {
+
+}
+
+
 function CWires(colour, star, led)
 {
     if(colour == "b")
