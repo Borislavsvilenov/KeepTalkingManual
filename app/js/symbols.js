@@ -18,5 +18,9 @@ function symInputs(msg) {
 }
 
 function decodeSymbols(sym1, sym2, sym3, sym4) {
-    
+    for(let s = 0; s < order.length; s++) {
+        if(order[s].includes(sym1) && order[s].includes(sym2) && order[s].includes(sym3) && order[s].includes(sym4)) {
+            
+        }
+    }
 }
