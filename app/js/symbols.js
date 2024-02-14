@@ -1,8 +1,9 @@
 const order = [['ol', 'at', 'lamda', 'n', 'SS', 'nl', 'Cdot'],
                ['eU', 'ol', 'Cdot', 'sq', 'estar', 'nl', '?'],
                ['Ccir', 'ear', 'sq', 'XI', '3', 'lamda', 'estar'],
-               []
-];
+               ['6', 'p', 'b', 'SS', 'XI', '?', 'smile'],
+               ['psi', 'smile', 'b', 'Cdot', 'p', 'snek', 'fstar'],
+               ['6', 'eU', 'stich', 'ae', 'psi', 'hU', 'omega']];
 
 
 function symInputs(msg) {
