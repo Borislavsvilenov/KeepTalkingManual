@@ -54,6 +54,13 @@ document.getElementById('prompt').addEventListener('input', function() {
 
         output.textContent = Memory(back[0], back[1], back[2], back[3], back[4]);
 
+    } else if(w1 == 'who') {
+      let back = getWordLocation(brokenDown[1]);
+
+      let ret = getList(brokenDown[2]);
+
+      output.textContent = [back, ret].join(', ');
+
     } else {
         output.textContent = "No such task in Data Base";
     }
