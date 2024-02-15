@@ -1,0 +1,1 @@
+const word_location = {'yes': 'midleft', 'first': 'topright', 'display': 'bottomright', 'okay': 'topright', 'says': 'bottomright', 'nothing': 'midleft', 'empty': 'bottomleft', 'blank': 'midright', 'no': 'bottomright', 'led': 'midleft', 'lead': 'bottomright', 'read': 'midright'};
