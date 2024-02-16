@@ -1,7 +1,7 @@
 body {
     display: grid;
     place-items: center;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(40, 40, 40);
     font-family: sans-serif;
 }
 
