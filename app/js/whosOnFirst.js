@@ -1,4 +1,17 @@
-const word_location = {'yes': 'midleft', 'first': 'topright', 'display': 'bottomright', 'okay': 'topright', 'says': 'bottomright', 'nothing': 'midleft', 'empty': 'bottomleft', 'blank': 'midright', 'no': 'bottomright', 'led': 'midleft', 'lead': 'bottomright', 'read': 'midright', 'red': 'midright', 'reed': 'bottomleft', 'leed': 'bottomleft', 'holdon': 'bottomright', 'you': 'midright', 'youare': 'bottomright', 'your': 'midright', 'youre': 'midright', 'ur': 'topleft', 'there': 'bottomright', 'theyre': 'bottomleft', 'their': 'midright', 'theyare': 'midleft', 'see': 'midright', 'c': 'topright', 'cee': 'bottomleft'
+const word_location = {'yes': 'midleft', 'first': 'topright', 
+'display': 'bottomright', 'okay': 'topright', 
+'says': 'bottomright', 'nothing': 'midleft', 
+'empty': 'bottomleft', 'blank': 'midright', 
+'no': 'bottomright', 'led': 'midleft', 
+'lead': 'bottomright', 'read': 'midright', 
+'red': 'midright', 'reed': 'bottomleft', 
+'leed': 'bottomleft', 'holdon': 'bottomright', 
+'you': 'midright', 'youare': 'bottomright', 
+'your': 'midright', 'youre': 'midright', 
+'ur': 'topleft', 'there': 'bottomright', 
+'theyre': 'bottomleft', 'their': 'midright', 
+'theyare': 'midleft', 'see': 'midright', 
+'c': 'topright', 'cee': 'bottomleft'
 };
 
 const wordList = {
