@@ -62,7 +62,7 @@ document.getElementById('prompt').addEventListener('input', function() {
       output.textContent = [back, ret].join(', ');
 
     } else if(w1 == 'SWires') {
-      
+      output.textContent = sequence(brokenDown)      
 
     } else {
         output.textContent = "No such task in Data Base";
